@@ -1,3 +1,10 @@
+# Run Bash at startup
+#shell:
+#  program: bash
+#    #args:
+#    #  - -c
+#    #  - nvim
+
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
 
 # Import additional configuration files
@@ -63,7 +70,7 @@ window:
   #     - buttonless: Title bar, transparent background and no title bar buttons
   #decorations: full
 
-  # Background opacity
+  # Background pacity
   #
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
@@ -120,7 +127,9 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Iosevka
-    family: Iosevka
+    #family: Iosevka
+    family: Consolas
+    #family: Jetbrains Mono NL
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -160,8 +169,8 @@ font:
 
   # Point size
   #12 works well for Iosevka
-  #size: 12.0
-  size: 20.0
+  size: 11.0
+  #size: 10.0
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -193,11 +202,11 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
-# Colors (Tomorrow Night)
+# Colors (Tomorrow Night) Theme THEME theme
 colors:
   # Default colors
   primary:
-    background: '#1E2226'
+    background: '#000000'
   #  background: '#1d1f21'
     foreground: '#17A888'
 
@@ -448,7 +457,7 @@ colors:
 #
 # Directory the shell is started in. If this is unset, or `None`, the working
 # directory of the parent process will be used.
-working_directory: C:\Users\Hrisheekesh Dandekar\Desktop
+working_directory: C:\Users\hrida\OneDrive\Desktop
 
 # Send ESC (\x1b) before characters when alt is pressed.
 #alt_send_esc: true
