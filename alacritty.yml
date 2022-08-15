@@ -1,7 +1,14 @@
 #   ---[ TODO ]---
 #   
-#   Bug: Quitting nvim or resizing window does not redraw the terminal
+#   Bug: Quitting nvim or resizing window does not redraw the terminal (fixed)
 #   ( implement auto 'cls' or something )
+#   
+#   [
+#     fix: 
+#       setting named env should not be enabled
+#       TERM: alacritty should not be set 
+#       ( let it all be commented out )
+#   ]
 #
 #
 #
@@ -21,14 +28,14 @@
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
 # set by alacritty itself.
-env:
+#env: #piece of shit setting lets vim into terminal scroll history
   # TERM variable
   #
   # This value is used to set the `$TERM` environment variable for
   # each instance of Alacritty. If it is not present, alacritty will
   # check the local terminfo database and use `alacritty` if it is
   # available, otherwise `xterm-256color` is used.
-  TERM: alacritty
+  #TERM: alacritty
 
 window:
   # Window dimensions (changes require restart)
@@ -119,9 +126,13 @@ font:
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
     family: Roboto Mono
+    #family: JetBrains mono NL
+    #family: Consolas
+
+    #abcdefghijklmnopqrstuvwxyz
 
     # The `style` can be specified to pick a specific face.
-    style: Medium
+    #style: Bold
 
   # Bold font face
   #bold:
@@ -157,7 +168,9 @@ font:
     #style: Bold Italic
 
   # Point size
-  size: 14.5
+  #size: 14.5
+  #size: 14
+  size: 17
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -473,7 +486,7 @@ live_config_reload: true
 #
 # Directory the shell is started in. If this is unset, or `None`, the working
 # directory of the parent process will be used.
-working_directory: C:\Users\hrida\OneDrive\Desktop
+working_directory: C:\Users\Hrisheekesh Dandekar\Desktop
 
 
 
@@ -586,6 +599,7 @@ working_directory: C:\Users\hrida\OneDrive\Desktop
 #    for certain keys:
 #
 #       `showkey --scancodes`.
+
 #
 # Then exactly one of:
 #
